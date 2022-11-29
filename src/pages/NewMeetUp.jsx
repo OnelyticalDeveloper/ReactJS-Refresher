@@ -5,7 +5,7 @@ import NewMeetUpForm from "../components/meetup/NewMeetUpForm";
 function NewMeetUp() {
   const navigate = useNavigate();
   function addMeetup(meetupData) {
-    fetch(process.env.URL, {
+    fetch(process.env.REACT_APP_URL, {
       method: "POST",
       body: JSON.stringify(meetupData),
       headers: {
